@@ -100,7 +100,7 @@ class _BuyerUserOrderWidgetState extends State<BuyerUserOrderWidget>
       this,
     );
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
